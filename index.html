@@ -7,8 +7,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --udf:#1565C0;--udf-bg:#E8F0FE;--udf-mid:#1976D2;
-  --ldf:#B71C1C;--ldf-bg:#FCE8E6;--ldf-mid:#C62828;
+  --udf:#1565C0;--udf-bg:#E8F0FE;
+  --ldf:#B71C1C;--ldf-bg:#FCE8E6;
   --gold:#E65100;--dark:#1C2333;--ink:#1a1a2e;
   --cream:#F7F8FC;--gray:#64748b;--border:#CBD5E1;
   --green:#1B5E20;--green-bg:#E8F5E9;
@@ -22,43 +22,42 @@ body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);ove
 
 /* NAV */
 nav{position:sticky;top:0;z-index:1000;background:var(--dark);padding:0 16px;display:flex;align-items:center;justify-content:space-between;height:50px;border-bottom:1px solid rgba(255,255,255,0.1);}
-.nav-brand{color:white;font-weight:700;font-size:13px;letter-spacing:.3px;white-space:nowrap;}
+.nav-brand{color:white;font-weight:700;font-size:13px;white-space:nowrap;}
 .nav-links{display:flex;gap:2px;flex-wrap:wrap;justify-content:flex-end;}
-.nav-links a{color:rgba(255,255,255,0.7);font-size:11px;text-decoration:none;padding:5px 10px;border-radius:6px;letter-spacing:.2px;transition:all .2s;white-space:nowrap;}
+.nav-links a{color:rgba(255,255,255,0.7);font-size:11px;text-decoration:none;padding:5px 9px;border-radius:6px;transition:all .2s;white-space:nowrap;}
 .nav-links a:hover{color:white;background:rgba(255,255,255,0.12);}
 
-/* HERO — light background, dark text */
-.hero{
-  background:linear-gradient(135deg,#E8F0FE 0%,#F0F4FF 50%,#FCE8E6 100%);
-  border-bottom:2px solid var(--border);
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  text-align:center;padding:64px 20px 52px;
-}
-.hero-badge{background:white;border:1.5px solid var(--border);color:var(--gray);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;padding:6px 16px;border-radius:20px;margin-bottom:24px;display:inline-block;}
-.hero h1{font-family:'Playfair Display',serif;font-size:clamp(42px,9vw,84px);line-height:1;color:var(--ink);margin-bottom:6px;}
+/* HERO */
+.hero{background:linear-gradient(135deg,#E8F0FE 0%,#F0F4FF 50%,#FCE8E6 100%);border-bottom:2px solid var(--border);display:flex;flex-direction:column;align-items:center;text-align:center;padding:60px 20px 48px;}
+.hero-badge{background:white;border:1.5px solid var(--border);color:var(--gray);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;padding:6px 16px;border-radius:20px;margin-bottom:22px;display:inline-block;}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(40px,9vw,84px);line-height:1;color:var(--ink);margin-bottom:6px;}
 .hero h1 .udf-c{color:var(--udf);}
-.hero h1 .vs{color:var(--gray);font-size:.35em;vertical-align:middle;margin:0 8px;}
+.hero h1 .vs{color:var(--gray);font-size:.35em;vertical-align:middle;margin:0 6px;}
 .hero h1 .ldf-c{color:var(--ldf);}
-.hero-sub{font-family:'Playfair Display',serif;font-style:italic;color:var(--gray);font-size:clamp(13px,1.8vw,17px);margin:14px 0 36px;max-width:540px;line-height:1.7;}
-.hero-scoreboard{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:24px;}
-.hero-stat{background:white;border:1.5px solid var(--border);padding:16px 24px;border-radius:12px;text-align:center;min-width:120px;}
+.hero-sub{font-family:'Playfair Display',serif;font-style:italic;color:var(--gray);font-size:clamp(13px,1.8vw,17px);margin:14px 0 32px;max-width:540px;line-height:1.7;}
+.hero-scoreboard{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:22px;}
+.hero-stat{background:white;border:1.5px solid var(--border);padding:14px 20px;border-radius:12px;text-align:center;min-width:110px;}
 .hero-stat.u{border-color:var(--udf);background:var(--udf-bg);}
 .hero-stat.l{border-color:var(--ldf);background:var(--ldf-bg);}
-.hero-stat .n{font-size:40px;font-weight:700;line-height:1;}
+.hero-stat .n{font-size:38px;font-weight:700;line-height:1;}
 .hero-stat.u .n{color:var(--udf);}
 .hero-stat.l .n{color:var(--ldf);}
 .hero-stat .n.gold{color:var(--gold);}
 .hero-stat .label{font-size:10px;color:var(--gray);letter-spacing:1px;text-transform:uppercase;margin-top:4px;}
-.hero-note{color:var(--gray);font-size:12px;max-width:560px;line-height:1.7;background:white;border:1px solid var(--border);padding:10px 18px;border-radius:8px;}
+.hero-note{color:var(--gray);font-size:12px;max-width:520px;line-height:1.7;background:white;border:1px solid var(--border);padding:9px 16px;border-radius:8px;}
 
 /* SECTIONS */
-section{padding:56px 0;}
+section{padding:52px 0;}
 .container{max-width:1060px;margin:0 auto;padding:0 20px;}
 .sec-tag{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gray);margin-bottom:10px;display:flex;align-items:center;gap:10px;}
 .sec-tag::after{content:'';flex:0 0 50px;height:1px;background:var(--border);}
-.sec-title{font-family:'Playfair Display',serif;font-size:clamp(26px,5vw,48px);font-weight:600;color:var(--ink);margin-bottom:32px;line-height:1.1;}
+.sec-title{font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,44px);font-weight:600;color:var(--ink);margin-bottom:28px;line-height:1.1;}
 .sec-title .u{color:var(--udf);}
 .sec-title .l{color:var(--ldf);}
+.section-light{background:var(--cream);}
+.section-white{background:white;}
+.section-udf{background:linear-gradient(135deg,#EEF4FF,#F0F4FF);}
+.section-ldf{background:linear-gradient(135deg,#FFF5F5,#FFF0F0);}
 
 /* STICKY BAR */
 .sticky-bar{position:sticky;top:50px;z-index:100;display:flex;border-bottom:2px solid var(--border);background:white;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
@@ -67,11 +66,11 @@ section{padding:56px 0;}
 .sticky-half.ldf{color:var(--ldf);}
 
 /* STAT GRID */
-.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:24px 0;}
-.stat-card{padding:20px;border-radius:12px;text-align:center;border:1.5px solid var(--border);background:var(--surface);transition:transform .2s,box-shadow .2s;}
-.stat-card:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,0.09);}
-.stat-card .sn{font-size:32px;font-weight:700;line-height:1;}
-.stat-card .sl{font-size:11px;color:var(--gray);margin-top:6px;line-height:1.4;}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:12px;margin:22px 0;}
+.stat-card{padding:18px;border-radius:12px;text-align:center;border:1.5px solid var(--border);background:var(--surface);transition:transform .2s,box-shadow .2s;}
+.stat-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.08);}
+.stat-card .sn{font-size:30px;font-weight:700;line-height:1;}
+.stat-card .sl{font-size:11px;color:var(--gray);margin-top:5px;line-height:1.4;}
 .stat-card.u{background:var(--udf-bg);border-color:var(--udf);}
 .stat-card.u .sn{color:var(--udf);}
 .stat-card.l{background:var(--ldf-bg);border-color:var(--ldf);}
@@ -82,171 +81,192 @@ section{padding:56px 0;}
 /* TIMELINE */
 .timeline{position:relative;padding:8px 0;}
 .timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--udf),var(--ldf));transform:translateX(-50%);}
-.tl-item{display:flex;gap:28px;margin-bottom:36px;position:relative;align-items:flex-start;}
+.tl-item{display:flex;gap:28px;margin-bottom:34px;position:relative;align-items:flex-start;}
 .tl-dot{position:absolute;left:50%;transform:translateX(-50%);width:13px;height:13px;border-radius:50%;border:3px solid var(--cream);top:14px;z-index:2;}
 .tl-dot.udf{background:var(--udf);}
 .tl-dot.ldf{background:var(--ldf);}
-.tl-card{flex:1;padding:18px;border-radius:10px;max-width:calc(50% - 36px);width:100%;word-wrap:break-word;}
+.tl-card{flex:1;padding:16px;border-radius:10px;max-width:calc(50% - 36px);word-wrap:break-word;}
 .tl-card.udf{background:var(--udf-bg);border-left:4px solid var(--udf);}
 .tl-card.ldf{background:var(--ldf-bg);border-left:4px solid var(--ldf);}
-.tl-year{font-size:22px;font-weight:700;margin-bottom:2px;}
+.tl-year{font-size:20px;font-weight:700;margin-bottom:2px;}
 .tl-card.udf .tl-year{color:var(--udf);}
 .tl-card.ldf .tl-year{color:var(--ldf);}
-.tl-cm{font-weight:600;font-size:12.5px;margin-bottom:8px;color:var(--ink);}
+.tl-cm{font-weight:600;font-size:12px;margin-bottom:7px;color:var(--ink);}
 .tl-body{font-size:12px;line-height:1.75;color:#374151;}
 .tl-body li{margin-bottom:3px;margin-left:16px;}
 .tl-spacer{flex:1;max-width:calc(50% - 36px);}
-.tl-tag{display:inline-block;font-size:10px;padding:2px 8px;border-radius:10px;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;font-weight:600;}
+.tl-tag{display:inline-block;font-size:10px;padding:2px 8px;border-radius:10px;letter-spacing:1px;text-transform:uppercase;margin-bottom:5px;font-weight:600;}
 .tl-tag.udf{background:var(--udf);color:white;}
 .tl-tag.ldf{background:var(--ldf);color:white;}
 
 /* TABLE WRAPPER */
-.table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:12px;}
+.table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}
 
-/* COMPARE GRID */
-.compare-grid{display:grid;grid-template-columns:160px 1fr 1fr;gap:0;border-radius:12px;overflow:hidden;border:1.5px solid var(--border);}
-.cg-header{padding:14px 16px;font-weight:700;font-size:12px;text-align:center;text-transform:uppercase;letter-spacing:.8px;}
+/* SECTOR COMPARE GRID */
+.compare-grid{display:grid;grid-template-columns:150px 1fr 1fr;gap:0;border-radius:12px;overflow:hidden;border:1.5px solid var(--border);}
+.cg-header{padding:13px 14px;font-weight:700;font-size:12px;text-align:center;text-transform:uppercase;letter-spacing:.8px;}
 .cg-header.cat{background:#F1F5F9;color:var(--gray);}
 .cg-header.udf{background:var(--udf);color:white;}
 .cg-header.ldf{background:var(--ldf);color:white;}
-.cg-cell{padding:14px 16px;font-size:12px;line-height:1.7;border-bottom:1px solid var(--border);vertical-align:top;word-wrap:break-word;color:var(--ink);}
-.cg-cell.cat{background:#F8FAFC;font-weight:600;font-size:11.5px;color:var(--ink);border-right:1px solid var(--border);}
+.cg-cell{padding:13px 14px;font-size:12px;line-height:1.7;border-bottom:1px solid var(--border);vertical-align:top;word-wrap:break-word;color:var(--ink);}
+.cg-cell.cat{background:#F8FAFC;font-weight:600;font-size:11px;color:var(--ink);border-right:1px solid var(--border);}
 .cg-cell.udf{background:white;border-right:1px solid var(--border);}
 .cg-cell.ldf{background:white;}
+
+/* BADGES */
 .badge{display:inline-block;padding:2px 7px;border-radius:4px;font-size:10px;font-weight:600;margin:2px;}
 .badge-green{background:var(--green-bg);color:var(--green);}
 .badge-red{background:var(--red-bg);color:var(--red);}
 .badge-amber{background:var(--amber-bg);color:var(--amber);}
 .badge-blue{background:var(--udf-bg);color:var(--udf);}
 
-/* CORRUPTION SECTION — cream/light background */
-.section-light{background:var(--cream);}
-.section-white{background:white;}
-.section-udf{background:linear-gradient(135deg,#EEF4FF,#F0F4FF);}
-.section-ldf{background:linear-gradient(135deg,#FFF5F5,#FFF0F0);}
+/* STATUS PILLS */
+.status-proven{color:var(--red);font-weight:600;font-size:10px;background:var(--red-bg);padding:3px 8px;border-radius:4px;display:inline-block;margin:2px 0;}
+.status-alleged{color:var(--amber);font-size:10px;background:var(--amber-bg);padding:3px 8px;border-radius:4px;display:inline-block;margin:2px 0;}
+.status-cleared{color:var(--green);font-size:10px;background:var(--green-bg);padding:3px 8px;border-radius:4px;display:inline-block;margin:2px 0;}
+.status-ongoing{color:#1565C0;font-size:10px;background:var(--udf-bg);padding:3px 8px;border-radius:4px;display:inline-block;margin:2px 0;}
 
 /* CORRUPTION HEADER BANDS */
-.corruption-header{padding:20px 20px 16px;border-radius:12px 12px 0 0;margin-bottom:0;}
+.corruption-header{padding:18px 20px 14px;border-radius:12px 12px 0 0;}
 .corruption-header.udf{background:var(--udf);color:white;}
 .corruption-header.ldf{background:var(--ldf);color:white;}
 .corruption-header h3{font-size:15px;font-weight:700;color:white;}
 .corruption-header p{font-size:12px;color:rgba(255,255,255,0.85);margin-top:4px;}
 
-/* CORRUPT TABLE */
-.corrupt-table{width:100%;border-collapse:collapse;border-radius:0 0 12px 12px;overflow:hidden;border:1.5px solid var(--border);}
-.corrupt-table th{padding:11px 14px;text-align:left;font-size:11px;letter-spacing:.6px;text-transform:uppercase;font-weight:700;background:#F1F5F9;color:var(--ink);border-bottom:1.5px solid var(--border);}
-.corrupt-table td{padding:12px 14px;font-size:12px;border-bottom:1px solid var(--border);vertical-align:top;word-wrap:break-word;line-height:1.65;color:var(--ink);}
+/* =============================================
+   CORRUPTION TABLE (desktop ≥640px)
+   ============================================= */
+.corrupt-table{width:100%;border-collapse:collapse;overflow:hidden;border:1.5px solid var(--border);border-top:none;border-radius:0 0 12px 12px;}
+.corrupt-table th{padding:10px 12px;text-align:left;font-size:11px;letter-spacing:.5px;text-transform:uppercase;font-weight:700;background:#F1F5F9;color:var(--ink);border-bottom:1.5px solid var(--border);}
+.corrupt-table td{padding:11px 12px;font-size:12px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.65;color:var(--ink);}
 .corrupt-table tr:last-child td{border-bottom:none;}
 .corrupt-table tr:nth-child(even) td{background:#F8FAFC;}
-.corrupt-table td strong{color:var(--ink);font-weight:600;}
+.corrupt-table td strong{font-weight:600;color:var(--ink);}
 
-.status-proven{color:var(--red);font-weight:600;font-size:10px;background:var(--red-bg);padding:2px 7px;border-radius:4px;white-space:nowrap;display:inline-block;margin:2px 0;}
-.status-alleged{color:var(--amber);font-size:10px;background:var(--amber-bg);padding:2px 7px;border-radius:4px;display:inline-block;margin:2px 0;}
-.status-cleared{color:var(--green);font-size:10px;background:var(--green-bg);padding:2px 7px;border-radius:4px;display:inline-block;margin:2px 0;}
-.status-ongoing{color:#1565C0;font-size:10px;background:var(--udf-bg);padding:2px 7px;border-radius:4px;display:inline-block;margin:2px 0;}
+/* =============================================
+   CORRUPTION CARDS (mobile <640px)
+   Stacked cards replace table on small screens
+   ============================================= */
+.corrupt-cards{display:none;border:1.5px solid var(--border);border-top:none;border-radius:0 0 12px 12px;overflow:hidden;}
+.cc{padding:14px 16px;border-bottom:1px solid var(--border);background:white;}
+.cc:nth-child(even){background:#F8FAFC;}
+.cc:last-child{border-bottom:none;}
+.cc-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:7px;}
+.cc-name{font-weight:700;font-size:13px;color:var(--ink);flex:1;line-height:1.3;}
+.cc-year{font-size:11px;font-weight:600;color:var(--gray);white-space:nowrap;background:#F1F5F9;padding:2px 8px;border-radius:10px;align-self:flex-start;}
+.cc-facts{font-size:12px;line-height:1.7;color:#374151;margin-bottom:9px;}
+.cc-status{}
+
+@media(max-width:639px){
+  .corrupt-table{display:none;}
+  .corrupt-cards{display:block;}
+}
 
 /* FAMOUS QUOTE */
-.famous-quote{background:var(--amber-bg);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:18px 22px;margin:24px 0;}
-.famous-quote .quote-text{font-family:'Playfair Display',serif;font-style:italic;color:var(--amber);font-size:clamp(12px,1.6vw,16px);line-height:1.75;}
-.famous-quote .quote-text strong{font-style:normal;color:var(--ink);}
+.famous-quote{background:var(--amber-bg);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:16px 20px;margin:22px 0;}
+.famous-quote .qt{font-family:'Playfair Display',serif;font-style:italic;color:var(--amber);font-size:clamp(12px,1.5vw,15px);line-height:1.8;}
+.famous-quote .qt strong{font-style:normal;color:var(--ink);}
 
-/* PINARAYI FAMILY SPECIAL SECTION */
-.family-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:20px;}
-.family-card{background:var(--ldf-bg);border:1.5px solid var(--ldf);border-radius:12px;padding:18px;position:relative;overflow:hidden;}
-.family-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--ldf);}
-.family-card .fc-name{font-weight:700;font-size:13px;color:var(--ldf);margin-bottom:4px;}
-.family-card .fc-relation{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--gray);margin-bottom:10px;}
-.family-card .fc-body{font-size:12px;line-height:1.7;color:var(--ink);}
+/* PINARAYI FAMILY CARDS */
+.family-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:18px;}
+.fc{background:var(--ldf-bg);border:1.5px solid var(--ldf);border-radius:12px;padding:16px;position:relative;overflow:hidden;}
+.fc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--ldf);}
+.fc-name{font-weight:700;font-size:13px;color:var(--ldf);margin-bottom:3px;}
+.fc-relation{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--gray);margin-bottom:10px;}
+.fc-body{font-size:12px;line-height:1.7;color:var(--ink);}
 
-/* PROGRESS BARS */
+/* DEBT BARS */
 .pbar-row{display:flex;gap:10px;align-items:center;margin-bottom:12px;flex-wrap:wrap;}
-.pbar-label{font-size:12px;min-width:170px;color:var(--ink);font-weight:500;}
-.pbar-wrap{flex:1;min-width:120px;height:10px;background:#E2E8F0;border-radius:5px;overflow:hidden;}
+.pbar-label{font-size:12px;min-width:165px;color:var(--ink);font-weight:500;}
+.pbar-wrap{flex:1;min-width:100px;height:10px;background:#E2E8F0;border-radius:5px;overflow:hidden;}
 .pbar-fill{height:100%;border-radius:5px;transition:width 1.2s ease;}
-.pbar-val{font-size:12px;min-width:70px;text-align:right;font-weight:700;}
+.pbar-val{font-size:12px;min-width:68px;text-align:right;font-weight:700;}
 
-/* REASON CARDS */
-.reason-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;}
-.reason-card{background:var(--surface);border-radius:12px;padding:20px;border:1.5px solid var(--border);transition:transform .2s,box-shadow .2s;}
+/* DOWNFALL CARDS */
+.reason-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:13px;}
+.reason-card{background:var(--surface);border-radius:12px;padding:18px;border:1.5px solid var(--border);transition:transform .2s,box-shadow .2s;}
 .reason-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.08);}
-.reason-card::before{content:'';display:block;height:3px;background:var(--ldf);border-radius:3px;margin-bottom:14px;}
-.reason-num{font-size:36px;font-weight:700;color:rgba(183,28,28,0.1);line-height:1;margin-bottom:4px;}
-.reason-card h3{font-size:14px;font-weight:700;margin-bottom:8px;color:var(--ink);}
+.reason-card::before{content:'';display:block;height:3px;background:var(--ldf);border-radius:3px;margin-bottom:12px;}
+.reason-num{font-size:34px;font-weight:700;color:rgba(183,28,28,0.1);line-height:1;margin-bottom:4px;}
+.reason-card h3{font-size:13.5px;font-weight:700;margin-bottom:7px;color:var(--ink);}
 .reason-card p{font-size:12px;line-height:1.7;color:var(--gray);}
 
-/* VERDICT GRID */
-.verdict-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:28px;}
-.verdict-box{border-radius:12px;padding:24px;}
+/* VERDICT */
+.verdict-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:24px;}
+.verdict-box{border-radius:12px;padding:22px;}
 .verdict-box.u{background:var(--udf-bg);border:2px solid var(--udf);}
 .verdict-box.l{background:var(--ldf-bg);border:2px solid var(--ldf);}
-.verdict-box h3{font-size:15px;font-weight:700;margin-bottom:14px;}
+.verdict-box h3{font-size:14px;font-weight:700;margin-bottom:12px;}
 .verdict-box.u h3{color:var(--udf);}
 .verdict-box.l h3{color:var(--ldf);}
-.verdict-box p{font-size:12.5px;line-height:1.9;color:var(--ink);}
-
-/* ELECTION TABLE */
-.election-tbl{width:100%;border-collapse:collapse;font-size:12.5px;border-radius:12px;overflow:hidden;border:1.5px solid var(--border);}
-.election-tbl th{padding:11px 14px;text-align:left;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;font-weight:700;background:#1C2333;color:white;}
-.election-tbl td{padding:11px 14px;border-bottom:1px solid var(--border);vertical-align:middle;color:var(--ink);}
-.election-tbl tr:last-child td{font-weight:700;background:#FFF3E0;color:var(--ink);}
-.election-tbl tr:nth-child(even) td{background:#F8FAFC;}
-.pill{display:inline-flex;align-items:center;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;}
-.pill-udf{background:var(--udf-bg);color:var(--udf);}
-.pill-ldf{background:var(--ldf-bg);color:var(--ldf);}
-
-/* COMPARE TABLE */
-.compare-tbl{width:100%;border-collapse:collapse;font-size:12.5px;border-radius:12px;overflow:hidden;border:1.5px solid var(--border);}
-.compare-tbl th{padding:11px 14px;text-align:left;background:#1C2333;color:white;font-size:11px;letter-spacing:.5px;}
-.compare-tbl td{padding:11px 14px;border-bottom:1px solid var(--border);vertical-align:top;color:var(--ink);}
-.compare-tbl tr:nth-child(even) td{background:#F8FAFC;}
+.verdict-box p{font-size:12px;line-height:1.9;color:var(--ink);}
 
 /* INFO BOX */
-.info-box{background:white;border:1.5px solid var(--border);border-radius:12px;padding:22px;margin:20px 0;}
-.info-box h4{font-size:14px;font-weight:700;margin-bottom:12px;color:var(--ink);}
+.info-box{background:white;border:1.5px solid var(--border);border-radius:12px;padding:20px;margin:18px 0;}
+.info-box h4{font-size:14px;font-weight:700;margin-bottom:10px;color:var(--ink);}
+
+/* COMPARE TABLE (verdict section) */
+.compare-tbl{width:100%;border-collapse:collapse;font-size:12px;border-radius:12px;overflow:hidden;border:1.5px solid var(--border);}
+.compare-tbl th{padding:10px 12px;text-align:left;background:#1C2333;color:white;font-size:11px;letter-spacing:.4px;}
+.compare-tbl td{padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top;color:var(--ink);}
+.compare-tbl tr:nth-child(even) td{background:#F8FAFC;}
+
+/* ELECTION TABLE */
+.election-tbl{width:100%;border-collapse:collapse;font-size:12px;border-radius:12px;overflow:hidden;border:1.5px solid var(--border);}
+.election-tbl th{padding:10px 12px;text-align:left;font-size:10px;letter-spacing:.8px;text-transform:uppercase;font-weight:700;background:#1C2333;color:white;}
+.election-tbl td{padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:middle;color:var(--ink);}
+.election-tbl tr:last-child td{font-weight:700;background:#FFF3E0;}
+.election-tbl tr:nth-child(even):not(:last-child) td{background:#F8FAFC;}
+.pill{display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:600;}
+.pill-udf{background:var(--udf-bg);color:var(--udf);}
+.pill-ldf{background:var(--ldf-bg);color:var(--ldf);}
 
 /* FOOTER */
 footer{background:#1C2333;color:rgba(255,255,255,0.65);text-align:center;padding:40px 20px;font-size:12px;line-height:2;}
 footer strong{color:rgba(255,255,255,0.9);}
-footer span{color:rgba(255,255,255,0.4);font-size:11px;}
+footer span{color:rgba(255,255,255,0.4);font-size:11px;display:block;margin-top:10px;}
 
 /* ANIMATIONS */
-.fade-in{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease;}
-.fade-in.visible{opacity:1;transform:translateY(0);}
+.fi{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s ease;}
+.fi.vis{opacity:1;transform:translateY(0);}
 
-/* RESPONSIVE */
+/* =============================================
+   RESPONSIVE
+   ============================================= */
 @media(max-width:768px){
   nav{height:46px;}
   .nav-links{display:none;}
   .sticky-bar{top:46px;}
   .timeline::before{left:14px;}
-  .tl-item{flex-direction:column!important;padding-left:36px;}
+  .tl-item{flex-direction:column!important;padding-left:34px;}
   .tl-dot{left:14px;}
   .tl-card,.tl-spacer{max-width:100%;}
   .tl-spacer{display:none;}
   .compare-grid{grid-template-columns:1fr;}
   .cg-header.cat,.cg-cell.cat{display:none;}
-  .hero h1{font-size:clamp(38px,12vw,68px);}
-  .election-tbl td,.corrupt-table td,.corrupt-table th{padding:8px 10px;font-size:11.5px;}
+  .hero h1{font-size:clamp(36px,12vw,64px);}
 }
 @media(max-width:500px){
   .stat-grid{grid-template-columns:repeat(2,1fr);}
   .hero-scoreboard{gap:8px;}
   .hero-stat{min-width:90px;padding:12px 14px;}
-  .hero-stat .n{font-size:32px;}
+  .hero-stat .n{font-size:30px;}
   .family-grid{grid-template-columns:1fr;}
+  .pbar-label{min-width:130px;font-size:11px;}
 }
 </style>
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
   <div class="nav-brand">🌴 Kerala 1957–2026</div>
   <div class="nav-links">
     <a href="#timeline">Timeline</a>
     <a href="#sectors">Sectors</a>
-    <a href="#corruption-udf">UDF Corruption</a>
-    <a href="#corruption-ldf">LDF Corruption</a>
-    <a href="#pinarayi-family">Pinarayi Family</a>
+    <a href="#corruption-udf">UDF Cases</a>
+    <a href="#corruption-ldf">LDF Cases</a>
+    <a href="#pinarayi-family">Family</a>
     <a href="#debt">Debt</a>
     <a href="#downfall">Downfall</a>
     <a href="#verdict">Verdict</a>
@@ -274,7 +294,7 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
 
 <!-- KEY STATS -->
 <section class="section-white" id="stats">
-  <div class="container fade-in">
+  <div class="container fi">
     <div class="sec-tag">Kerala at a Glance · 2026</div>
     <h2 class="sec-title">The Numbers That Matter</h2>
     <div class="stat-grid">
@@ -293,11 +313,11 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
 <!-- TIMELINE -->
 <section id="timeline" class="section-light">
   <div class="container">
-    <div class="sec-tag fade-in">Government by Government · 1957–2026</div>
-    <h2 class="sec-title fade-in">Complete Timeline</h2>
+    <div class="sec-tag fi">Government by Government · 1957–2026</div>
+    <h2 class="sec-title fi">Complete Timeline</h2>
     <div class="timeline">
 
-      <div class="tl-item fade-in">
+      <div class="tl-item fi">
         <div class="tl-card ldf">
           <div class="tl-tag ldf">CPI Predecessor</div>
           <div class="tl-year">1957–59</div>
@@ -314,7 +334,7 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
         <div class="tl-spacer"></div>
       </div>
 
-      <div class="tl-item fade-in" style="flex-direction:row-reverse;">
+      <div class="tl-item fi" style="flex-direction:row-reverse;">
         <div class="tl-spacer"></div>
         <div class="tl-dot udf"></div>
         <div class="tl-card udf">
@@ -330,7 +350,7 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
         </div>
       </div>
 
-      <div class="tl-item fade-in">
+      <div class="tl-item fi">
         <div class="tl-card ldf">
           <div class="tl-tag ldf">CPI(M) + Allies</div>
           <div class="tl-year">1967–70</div>
@@ -345,7 +365,7 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
         <div class="tl-spacer"></div>
       </div>
 
-      <div class="tl-item fade-in" style="flex-direction:row-reverse;">
+      <div class="tl-item fi" style="flex-direction:row-reverse;">
         <div class="tl-spacer"></div>
         <div class="tl-dot udf"></div>
         <div class="tl-card udf">
@@ -361,7 +381,7 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
         </div>
       </div>
 
-      <div class="tl-item fade-in">
+      <div class="tl-item fi">
         <div class="tl-card ldf">
           <div class="tl-tag ldf">LDF</div>
           <div class="tl-year">1980–82</div>
@@ -376,7 +396,7 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
         <div class="tl-spacer"></div>
       </div>
 
-      <div class="tl-item fade-in" style="flex-direction:row-reverse;">
+      <div class="tl-item fi" style="flex-direction:row-reverse;">
         <div class="tl-spacer"></div>
         <div class="tl-dot udf"></div>
         <div class="tl-card udf">
@@ -391,13 +411,13 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
         </div>
       </div>
 
-      <div class="tl-item fade-in">
+      <div class="tl-item fi">
         <div class="tl-card ldf">
           <div class="tl-tag ldf">LDF</div>
           <div class="tl-year">1987–91</div>
           <div class="tl-cm">E.K. Nayanar — 2nd Term</div>
           <div class="tl-body"><ul>
-            <li><strong>Total Literacy Campaign (1989)</strong> — 100% literacy, UN acclaimed</li>
+            <li>Total Literacy Campaign (1989) — 100% literacy, UN acclaimed</li>
             <li>People's Science Movement (KSSP) — globally recognized</li>
             <li>Rural health infrastructure expanded across districts</li>
           </ul><br><strong>Corruption:</strong> Minor lapses. No major proven case.</div>
@@ -406,7 +426,7 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
         <div class="tl-spacer"></div>
       </div>
 
-      <div class="tl-item fade-in" style="flex-direction:row-reverse;">
+      <div class="tl-item fi" style="flex-direction:row-reverse;">
         <div class="tl-spacer"></div>
         <div class="tl-dot udf"></div>
         <div class="tl-card udf">
@@ -421,14 +441,14 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
         </div>
       </div>
 
-      <div class="tl-item fade-in">
+      <div class="tl-item fi">
         <div class="tl-card ldf">
           <div class="tl-tag ldf">LDF</div>
           <div class="tl-year">1996–2001</div>
           <div class="tl-cm">E.K. Nayanar — 3rd Term</div>
           <div class="tl-body"><ul>
-            <li><strong>People's Plan Campaign</strong> — 35–40% plan funds to local bodies (globally acclaimed)</li>
-            <li><strong>Kudumbashree (1998)</strong> — women's SHG network, now a national model</li>
+            <li>People's Plan Campaign — 35–40% plan funds to local bodies (globally acclaimed)</li>
+            <li>Kudumbashree (1998) — women's SHG, now a national model</li>
             <li>IT@School — computers in government schools</li>
             <li>First broadband internet initiative in a state</li>
           </ul><br><strong>Corruption:</strong> Minor procurement issues. No major proven case.</div>
@@ -437,7 +457,7 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
         <div class="tl-spacer"></div>
       </div>
 
-      <div class="tl-item fade-in" style="flex-direction:row-reverse;">
+      <div class="tl-item fi" style="flex-direction:row-reverse;">
         <div class="tl-spacer"></div>
         <div class="tl-dot udf"></div>
         <div class="tl-card udf">
@@ -449,11 +469,11 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
             <li>NRI Investment Board launched</li>
             <li>Smart City Kochi MOU signed with Dubai</li>
             <li>PSC transparent recruitment drive</li>
-          </ul><br><strong>Corruption:</strong> SNC-Lavalin case (against LDF's Pinarayi Vijayan) investigated. <span class="status-cleared">Pinarayi acquitted by SC 2024</span></div>
+          </ul><br><strong>Corruption:</strong> SNC-Lavalin (against LDF's Pinarayi) investigated. <span class="status-cleared">Pinarayi acquitted SC 2024</span></div>
         </div>
       </div>
 
-      <div class="tl-item fade-in">
+      <div class="tl-item fi">
         <div class="tl-card ldf">
           <div class="tl-tag ldf">LDF</div>
           <div class="tl-year">2006–11</div>
@@ -462,14 +482,14 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
             <li>Janasree Housing Project for landless poor</li>
             <li>Vizhinjam Port — MOU signed, DPR submitted</li>
             <li>Kochi Metro Rail — DPR submitted to Centre</li>
-            <li>VS personally fought land encroachments — image as honest CM</li>
-          </ul><br><strong>Corruption:</strong> VS himself was critical of party leaders. Minimal compared to later LDF tenure.</div>
+            <li>VS personally fought land encroachments — honest CM image</li>
+          </ul><br><strong>Corruption:</strong> VS was critical of own party leaders. Minimal compared to later LDF.</div>
         </div>
         <div class="tl-dot ldf"></div>
         <div class="tl-spacer"></div>
       </div>
 
-      <div class="tl-item fade-in" style="flex-direction:row-reverse;">
+      <div class="tl-item fi" style="flex-direction:row-reverse;">
         <div class="tl-spacer"></div>
         <div class="tl-dot udf"></div>
         <div class="tl-card udf">
@@ -486,30 +506,27 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
             <li>1,67,096 govt jobs filled — record in state history</li>
             <li>UN Public Service Award 2013 — only Kerala CM to receive it</li>
             <li>New Govt Medical Colleges (first in 31 years)</li>
-            <li>₹40,000 cr investment proposals at summit</li>
           </ul><br>
           <strong>Corruption:</strong> <span class="status-proven">KM Mani Bar Bribery — resigned as FM; Vigilance clean chit 2018</span><br>
-          Solar Scam link alleged — Crime Branch (LDF's own) found NO evidence against Chandy. <span class="status-cleared">Cleared 2018</span><br>
-          Palarivattom Flyover under UDF — structural collapse under LDF. <span class="status-alleged">CBI case ongoing</span></div>
+          Solar Scam link alleged — LDF's own Crime Branch found NO evidence against Chandy. <span class="status-cleared">Cleared 2018</span></div>
         </div>
       </div>
 
-      <div class="tl-item fade-in">
+      <div class="tl-item fi">
         <div class="tl-card ldf">
           <div class="tl-tag ldf">LDF ★ 10-Year Reign</div>
           <div class="tl-year">2016–26</div>
           <div class="tl-cm">Pinarayi Vijayan (CM) — Unprecedented 2nd Term</div>
           <div class="tl-body"><ul>
-            <li>COVID-19 response (2020) — nationally praised by experts</li>
-            <li>Kochi Metro Phase 2 extended (project started under UDF)</li>
-            <li>Kannur Airport inaugurated 2018 (project started under UDF)</li>
-            <li>Vizhinjam Port — partial completion 2024 (project started under UDF)</li>
-            <li>KIIFB — infrastructure borrowing fund (CAG flagged as hidden off-budget debt)</li>
-            <li>SilverLine K-Rail (₹63,941 cr) — <strong>fully abandoned after wasting crores on surveys</strong></li>
+            <li>COVID-19 response (2020) — nationally praised</li>
+            <li>Kochi Metro Phase 2 extended (started under UDF)</li>
+            <li>Kannur Airport inaugurated 2018 (started under UDF)</li>
+            <li>Vizhinjam Port — partial completion 2024 (started under UDF)</li>
+            <li>KIIFB — CAG flagged as hidden off-budget debt</li>
+            <li>SilverLine K-Rail (₹63,941 cr) — fully abandoned after wasting survey funds</li>
             <li>Debt: ₹1.57L cr → ₹4.82L cr — tripled in 9 years</li>
             <li>Youth unemployment ~30%; 2.5L leaving annually</li>
-            <li>Kerala inflation 8.6% (2025) — highest in India</li>
-            <li>Building permit fee hiked 2000%+ illegally — 4L families overcharged</li>
+            <li>Inflation 8.6% (2025) — highest in India</li>
           </ul><br>
           <strong style="color:var(--red);">Corruption: See dedicated sections below.</strong></div>
         </div>
@@ -524,38 +541,31 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
 <!-- SECTOR COMPARISON -->
 <section id="sectors" class="section-white">
   <div class="container">
-    <div class="sec-tag fade-in">Sector by Sector</div>
-    <h2 class="sec-title fade-in">Head-to-Head Comparison</h2>
-    <div class="table-wrap fade-in">
-      <div class="compare-grid">
+    <div class="sec-tag fi">Sector by Sector</div>
+    <h2 class="sec-title fi">Head-to-Head Comparison</h2>
+    <div class="table-wrap fi">
+      <div class="compare-grid" style="min-width:560px;">
         <div class="cg-header cat">Sector</div>
         <div class="cg-header udf">🔵 UDF</div>
         <div class="cg-header ldf">🔴 LDF</div>
-
         <div class="cg-cell cat">🌾 Land Reform</div>
         <div class="cg-cell udf">Implemented EMS's Act (1963 &amp; 1970) — Congress governments executed redistribution to 1.5M households.</div>
         <div class="cg-cell ldf"><span class="badge badge-green">★ LDF Legacy</span> EMS (1957 &amp; 1967) drafted and initiated the laws. Abolished feudal tenancy — the Left's greatest historical achievement.</div>
-
         <div class="cg-cell cat">📚 Literacy</div>
         <div class="cg-cell udf">India's first IT Park (1990). Infopark Kochi. 1.67L PSC jobs — record. New Govt Medical Colleges (first in 31 years).</div>
         <div class="cg-cell ldf"><span class="badge badge-green">★ LDF Legacy</span> Total Literacy Campaign (1989) — 100% literacy. IT@School. Kudumbashree. People's Science Movement.</div>
-
         <div class="cg-cell cat">🏥 Healthcare</div>
         <div class="cg-cell udf">New Govt Medical Colleges under Chandy. KARUNA palliative care. Life expectancy 74 yrs built across governments.</div>
         <div class="cg-cell ldf"><span class="badge badge-green">★ LDF Legacy</span> Rural public health infra (1957–70). Early immunization. COVID-19 response (2020) praised nationally.</div>
-
         <div class="cg-cell cat">🏗️ Infrastructure</div>
-        <div class="cg-cell udf"><span class="badge badge-blue">★ Strong Record</span> Kochi Metro, Kannur Airport, Vizhinjam Port, 227 bridges, Technopark Phase 3 (India's largest), Smart City Kochi, solar airport.</div>
-        <div class="cg-cell ldf">KIIFB projects (hidden debt). Completed projects started under UDF. SilverLine ₹63,941 cr: <span class="badge badge-red">ABANDONED</span>. No major exclusive greenfield project.</div>
-
+        <div class="cg-cell udf"><span class="badge badge-blue">★ Strong</span> Kochi Metro, Kannur Airport, Vizhinjam Port, 227 bridges, Technopark Phase 3 (India's largest), Smart City Kochi.</div>
+        <div class="cg-cell ldf">KIIFB projects (hidden debt). Completed UDF-started projects. SilverLine ₹63,941 cr: <span class="badge badge-red">ABANDONED</span></div>
         <div class="cg-cell cat">👵 Welfare</div>
         <div class="cg-cell udf">Pension ₹300→₹1,500. Beneficiaries 12.9L→34.43L (167% rise). 4.14L homes built. Rubber subsidy ₹150/kg.</div>
         <div class="cg-cell ldf">Pension increased to ₹1,600. Beneficiaries 60L+. <span class="badge badge-amber">Controversy: election-timed disbursals</span></div>
-
         <div class="cg-cell cat">💰 Debt</div>
-        <div class="cg-cell udf">₹1.57L cr when Chandy left (2016) — consistent with national norms. No off-budget hidden borrowings flagged by CAG.</div>
-        <div class="cg-cell ldf"><span class="badge badge-red">Critical Failure</span> Debt tripled: ₹1.57L cr → ₹4.82L cr. CAG flagged KIIFB as hidden debt. 98% of new borrowings serviced old debt.</div>
-
+        <div class="cg-cell udf">₹1.57L cr when Chandy left (2016) — within national norms. No off-budget hidden borrowings flagged by CAG.</div>
+        <div class="cg-cell ldf"><span class="badge badge-red">Critical Failure</span> Debt tripled: ₹1.57L cr → ₹4.82L cr. CAG flagged KIIFB as hidden debt. 98% of borrowings serviced old debt.</div>
         <div class="cg-cell cat">📈 Economy</div>
         <div class="cg-cell udf">GSDP growth above national average (2013). Non-tax revenue ₹4,127 cr→₹18,016 cr. Lottery revenue ₹111 cr→₹3,337 cr.</div>
         <div class="cg-cell ldf">Debt/GSDP: 26.88% (2016)→37.84% (2024). Revenue fell 6.21% in 2023–24. Inflation 8.6% — highest in India. 30% youth unemployment.</div>
@@ -567,31 +577,39 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
 <!-- UDF CORRUPTION -->
 <section id="corruption-udf" class="section-udf">
   <div class="container">
-    <div class="sec-tag fade-in">Full Accountability Record</div>
-    <h2 class="sec-title fade-in"><span class="u">UDF</span> Corruption Record</h2>
-    <p style="color:var(--gray);margin-bottom:20px;font-size:13px;" class="fade-in">All allegations listed. Most were cleared by courts. Genuine cases also noted.</p>
-    <div class="table-wrap fade-in">
+    <div class="sec-tag fi">Full Accountability Record</div>
+    <h2 class="sec-title fi"><span class="u">UDF</span> Corruption Record</h2>
+    <p style="color:var(--gray);margin-bottom:18px;font-size:13px;" class="fi">All allegations listed. Most were cleared by courts.</p>
+    <div class="fi">
       <div class="corruption-header udf"><h3>🔵 UDF — All Known Cases</h3><p>Allegations, probes, and legal outcomes</p></div>
-      <table class="corrupt-table">
-        <thead><tr>
-          <th style="min-width:160px;">Case</th>
-          <th style="min-width:55px;">Year</th>
-          <th>Facts</th>
-          <th style="min-width:120px;">Status</th>
-        </tr></thead>
-        <tbody>
-          <tr><td><strong>Bar Bribery / KM Mani</strong></td><td>2015</td><td>Finance Minister KM Mani accused of taking ₹1 cr bribe from Bar Owners Association. HC made adverse comments; Mani resigned as FM. Vigilance clean chit March 2018. Case closed April 2019.</td><td><span class="status-cleared">Cleared 2018–19</span></td></tr>
-          <tr><td><strong>Solar Scam</strong></td><td>2013</td><td>Sara-Bijumon couple defrauded investors using CM Chandy's name &amp; office. LDF's own Crime Branch (2018) found no evidence against Chandy himself. Central agencies also cleared Chandy. Culprits (Sara, Bijumon) convicted.</td><td><span class="status-cleared">Chandy cleared 2018</span></td></tr>
-          <tr><td><strong>Palarivattom Flyover Collapse</strong></td><td>2016–18</td><td>Flyover built under UDF (₹65 cr, 2016) developed structural defects by 2018 under LDF watch. CBI probe found construction deficiencies. Contractor &amp; officials charged. UDF gave contract; LDF oversaw collapse.</td><td><span class="status-alleged">CBI case ongoing</span></td></tr>
-          <tr><td><strong>Palmolein Import</strong></td><td>1991</td><td>Alleged irregularities in palmolein imports under Karunakaran era. VACB 2011 probe found Chandy (then FM) had no role. Case closed.</td><td><span class="status-cleared">Cleared 2011</span></td></tr>
-          <tr><td><strong>Pattoor Land Case</strong></td><td>2016</td><td>LDF accused Chandy of land irregularities. HC found FIR based on wrong report — "claim not based on any document." Case rejected.</td><td><span class="status-cleared">HC Rejected</span></td></tr>
-          <tr><td><strong>Kerala Gramin Bank</strong></td><td>2006</td><td>Irregularities alleged in appointments under UDF era. Internal inquiry conducted. No criminal charge against any minister.</td><td><span class="status-cleared">Cleared — Internal Inquiry</span></td></tr>
-          <tr><td><strong>Lavlin / SNC-Lavalin</strong></td><td>2001–04</td><td>Power project case actually involved LDF's Pinarayi Vijayan as Power Minister. Investigated under both UDF &amp; LDF govts. SC acquitted Pinarayi in 2024.</td><td><span class="status-cleared">SC Acquittal 2024</span></td></tr>
-        </tbody>
-      </table>
+      <!-- DESKTOP TABLE -->
+      <div class="table-wrap">
+        <table class="corrupt-table">
+          <thead><tr><th style="min-width:150px;">Case</th><th style="min-width:52px;">Year</th><th>Facts</th><th style="min-width:110px;">Status</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Bar Bribery / KM Mani</strong></td><td>2015</td><td>Finance Minister KM Mani accused of taking ₹1 cr bribe from Bar Owners Association. HC adverse comments; Mani resigned as FM. Vigilance clean chit March 2018. Case closed April 2019.</td><td><span class="status-cleared">Cleared 2018–19</span></td></tr>
+            <tr><td><strong>Solar Scam</strong></td><td>2013</td><td>Sara-Bijumon couple defrauded investors using CM Chandy's name. LDF's own Crime Branch (2018) found no evidence against Chandy. Central agencies also cleared him. Culprits convicted.</td><td><span class="status-cleared">Chandy cleared 2018</span></td></tr>
+            <tr><td><strong>Palarivattom Flyover Collapse</strong></td><td>2016–18</td><td>Flyover built under UDF (₹65 cr) developed structural defects by 2018 under LDF watch. CBI probe found construction deficiencies. Contractor &amp; officials charged.</td><td><span class="status-alleged">CBI case ongoing</span></td></tr>
+            <tr><td><strong>Palmolein Import</strong></td><td>1991</td><td>Alleged irregularities under Karunakaran era. VACB 2011 probe found Chandy (then FM) had no role. Case closed.</td><td><span class="status-cleared">Cleared 2011</span></td></tr>
+            <tr><td><strong>Pattoor Land Case</strong></td><td>2016</td><td>LDF accused Chandy of land irregularities. HC found FIR based on wrong report — "claim not based on any document." Case rejected.</td><td><span class="status-cleared">HC Rejected</span></td></tr>
+            <tr><td><strong>Kerala Gramin Bank</strong></td><td>2006</td><td>Irregularities alleged in appointments under UDF era. Internal inquiry conducted. No criminal charge against any minister.</td><td><span class="status-cleared">Cleared — Internal</span></td></tr>
+            <tr><td><strong>SNC-Lavalin</strong></td><td>2001–04</td><td>Power project case involved LDF's Pinarayi Vijayan as Power Minister. Investigated under both govts. SC acquitted Pinarayi in 2024.</td><td><span class="status-cleared">SC Acquittal 2024</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- MOBILE CARDS -->
+      <div class="corrupt-cards">
+        <div class="cc"><div class="cc-top"><div class="cc-name">Bar Bribery / KM Mani</div><div class="cc-year">2015</div></div><div class="cc-facts">FM KM Mani accused of taking ₹1 cr bribe from Bar Owners Association. HC adverse comments; Mani resigned. Vigilance clean chit March 2018. Case closed April 2019.</div><div class="cc-status"><span class="status-cleared">Cleared 2018–19</span></div></div>
+        <div class="cc"><div class="cc-top"><div class="cc-name">Solar Scam</div><div class="cc-year">2013</div></div><div class="cc-facts">Sara-Bijumon couple defrauded investors using CM Chandy's name. LDF's own Crime Branch (2018) found no evidence against Chandy. Central agencies also cleared him.</div><div class="cc-status"><span class="status-cleared">Chandy cleared 2018</span></div></div>
+        <div class="cc"><div class="cc-top"><div class="cc-name">Palarivattom Flyover Collapse</div><div class="cc-year">2016–18</div></div><div class="cc-facts">Flyover built under UDF (₹65 cr) developed structural defects by 2018 under LDF watch. CBI probe found construction deficiencies. Contractor &amp; officials charged.</div><div class="cc-status"><span class="status-alleged">CBI case ongoing</span></div></div>
+        <div class="cc"><div class="cc-top"><div class="cc-name">Palmolein Import</div><div class="cc-year">1991</div></div><div class="cc-facts">Alleged irregularities under Karunakaran era. VACB 2011 probe found Chandy (then FM) had no role. Case closed.</div><div class="cc-status"><span class="status-cleared">Cleared 2011</span></div></div>
+        <div class="cc"><div class="cc-top"><div class="cc-name">Pattoor Land Case</div><div class="cc-year">2016</div></div><div class="cc-facts">LDF accused Chandy of land irregularities. HC found FIR based on wrong report — "claim not based on any document." Case rejected.</div><div class="cc-status"><span class="status-cleared">HC Rejected</span></div></div>
+        <div class="cc"><div class="cc-top"><div class="cc-name">Kerala Gramin Bank</div><div class="cc-year">2006</div></div><div class="cc-facts">Irregularities alleged in appointments under UDF era. Internal inquiry conducted. No criminal charge against any minister.</div><div class="cc-status"><span class="status-cleared">Cleared — Internal</span></div></div>
+        <div class="cc"><div class="cc-top"><div class="cc-name">SNC-Lavalin</div><div class="cc-year">2001–04</div></div><div class="cc-facts">Power project case involved LDF's Pinarayi Vijayan as Power Minister. Investigated under both govts. SC acquitted Pinarayi in 2024.</div><div class="cc-status"><span class="status-cleared">SC Acquittal 2024</span></div></div>
+      </div>
     </div>
-    <div class="info-box fade-in" style="margin-top:20px;border-left:4px solid var(--udf);">
-      <h4>Key distinction in UDF record:</h4>
+    <div class="info-box fi" style="margin-top:18px;border-left:4px solid var(--udf);">
+      <h4>Key distinction in UDF record</h4>
       <p style="font-size:12.5px;line-height:1.8;color:var(--ink);">The most significant UDF corruption — KM Mani bar bribery — resulted in the minister's resignation and a clean chit by vigilance. Most other allegations were either politically motivated or cleared by courts. No sitting UDF CM's direct family member has been charged with corruption-related crimes by investigation agencies.</p>
     </div>
   </div>
@@ -600,89 +618,100 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
 <!-- LDF CORRUPTION -->
 <section id="corruption-ldf" class="section-ldf">
   <div class="container">
-    <div class="sec-tag fade-in">Full Accountability Record</div>
-    <h2 class="sec-title fade-in"><span class="l">LDF</span> Corruption Record</h2>
-    <p style="color:var(--gray);margin-bottom:20px;font-size:13px;" class="fade-in">Particularly the 2016–2026 Pinarayi era, which saw unprecedented institutional corruption.</p>
-    <div class="table-wrap fade-in">
+    <div class="sec-tag fi">Full Accountability Record</div>
+    <h2 class="sec-title fi"><span class="l">LDF</span> Corruption Record</h2>
+    <p style="color:var(--gray);margin-bottom:18px;font-size:13px;" class="fi">Particularly the 2016–2026 Pinarayi era — unprecedented institutional corruption.</p>
+    <div class="fi">
       <div class="corruption-header ldf"><h3>🔴 LDF — All Known Cases</h3><p>Proven cases, chargesheets, arrests, and ongoing investigations</p></div>
-      <table class="corrupt-table">
-        <thead><tr>
-          <th style="min-width:180px;">Case</th>
-          <th style="min-width:55px;">Year</th>
-          <th>Facts</th>
-          <th style="min-width:120px;">Status</th>
-        </tr></thead>
-        <tbody>
-          <tr><td><strong>Gold Smuggling — Sivasankar / CM's Office</strong></td><td>2020</td><td>30 kg gold smuggled via UAE diplomatic baggage. CM's Principal Secretary M. Sivasankar found linked through WhatsApp chats with accused Swapna Suresh. Sivasankar suspended after govt's own inquiry. NIA, ED, Customs, and CBI all filed separate cases.</td><td><span class="status-proven">Sivasankar Arrested; 4 agencies active</span></td></tr>
-          <tr><td><strong>LIFE Mission FCRA Scam</strong></td><td>2020</td><td>Flood victims' housing project (funded by UAE) turned into kickback operation. 30% commission allegedly fixed. Sivasankar arrested by ED. 4,000-page chargesheet filed before court. FCRA violation confirmed. CM's PS was the central figure.</td><td><span class="status-proven">Arrested; 4,000-page Chargesheet</span></td></tr>
-          <tr><td><strong>Karuvannur Service Co-op Bank (₹300 cr)</strong></td><td>2021</td><td>CPI(M)-controlled cooperative bank looted by party-linked figures. ED named CPI(M) itself as the 68th accused — first time in Kerala history a party was accused under PMLA. ₹128 cr seized. 8 party accounts frozen. 4 arrested including branch officials.</td><td><span class="status-proven">Party (CPI-M) Accused; ₹128 cr Seized</span></td></tr>
-          <tr><td><strong>Sabarimala Gold Theft (TDB)</strong></td><td>2023</td><td>Gold ornaments stolen from Sabarimala Temple treasury. 13 persons arrested including 2 former CPI(M) presidents of the Travancore Devaswom Board (TDB). HC-monitored SIT investigation. Both HC and SC denied bail — courts noted "sufficient evidence." Devastated LDF's image among Hindu devotees.</td><td><span class="status-proven">13 Arrested; HC &amp; SC Denied Bail</span></td></tr>
-          <tr><td><strong>CAG Fiscal Fraud — ₹3,609 cr Seizure</strong></td><td>2024</td><td>CAG documented government seizure of ₹3,609 cr from Treasury Savings Bank accounts on March 26, 2024 — 5 days before financial year end — to artificially reduce fiscal deficit figures on paper. Classic accounting manipulation.</td><td><span class="status-proven">CAG Documented in Official Report</span></td></tr>
-          <tr><td><strong>KIIFB Hidden Off-Budget Debt</strong></td><td>2018–24</td><td>Kerala Infrastructure Investment Fund Board used to borrow money outside state budget, bypassing FRBM limits. CAG flagged this as hidden off-budget liability. Total KIIFB liabilities not reflected in official debt figures, understating real debt by tens of thousands of crores.</td><td><span class="status-proven">CAG Flagged; Centre withheld borrowing limits</span></td></tr>
-          <tr><td><strong>Cooperative Software Scam ₹700 cr</strong></td><td>2024–25</td><td>₹206 cr TCS contract for cooperative department software scrapped. New tender criteria drafted to exclude established IT companies. Two Kannur-based firms linked to CPI(M) — including Dinesh Beedi Society (no IT experience) — positioned for ₹700 cr contract. Opposition moved Kerala HC.</td><td><span class="status-alleged">HC petition; Alleged cronyism</span></td></tr>
-          <tr><td><strong>SilverLine (K-Rail) Fund Waste</strong></td><td>2021–22</td><td>₹63,941 cr semi-high-speed rail project pushed without Central approval. Crores spent on social impact surveys, land identification, stone plantings. Project abandoned after public outcry and Centre's rejection. Public funds wasted; CM refused to disclose exact amount spent.</td><td><span class="status-proven">Project Abandoned; Funds Wasted</span></td></tr>
-          <tr><td><strong>Building Permit Fee Hike 2000%</strong></td><td>2023</td><td>Fee hiked from ₹525 to ₹7,500–₹25,000 without legally amending the rules. Approximately 4 lakh families overcharged. HC intervened. Amounts collected illegally. Became major anti-incumbency issue among middle class.</td><td><span class="status-proven">HC Intervened; Illegal collection established</span></td></tr>
-          <tr><td><strong>Swapna Suresh Allegations — CM Contact</strong></td><td>2020–22</td><td>Gold smuggling accused Swapna Suresh alleged in statements that CM Pinarayi Vijayan was directly aware of and involved in the diplomatic channel operation. CM denied all allegations. NIA investigated. Statements admitted in court proceedings.</td><td><span class="status-alleged">Alleged; NIA investigation; CM denied</span></td></tr>
-          <tr><td><strong>LDF Functionary Gold Smuggling Arrests</strong></td><td>2021–23</td><td>Multiple CPI(M) local leaders and functionaries arrested for gold smuggling across southern districts. Pattern of using party networks for contraband. No direct CM link proven but widespread at local level.</td><td><span class="status-proven">Multiple Arrests</span></td></tr>
-        </tbody>
-      </table>
+      <!-- DESKTOP TABLE -->
+      <div class="table-wrap">
+        <table class="corrupt-table">
+          <thead><tr><th style="min-width:170px;">Case</th><th style="min-width:52px;">Year</th><th>Facts</th><th style="min-width:120px;">Status</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Gold Smuggling — Sivasankar / CM's Office</strong></td><td>2020</td><td>30 kg gold smuggled via UAE diplomatic baggage. CM's Principal Secretary M. Sivasankar linked through WhatsApp chats with accused Swapna Suresh. Suspended after govt inquiry. NIA, ED, Customs &amp; CBI filed separate cases.</td><td><span class="status-proven">Sivasankar Arrested; 4 agencies active</span></td></tr>
+            <tr><td><strong>LIFE Mission FCRA Scam</strong></td><td>2020</td><td>Flood victims' housing project (UAE-funded) turned into kickback operation. 30% commission allegedly fixed. Sivasankar arrested by ED. 4,000-page chargesheet filed. FCRA violation confirmed. CM's PS was the central figure.</td><td><span class="status-proven">Arrested; 4,000-page Chargesheet</span></td></tr>
+            <tr><td><strong>Karuvannur Co-op Bank (₹300 cr)</strong></td><td>2021</td><td>CPI(M)-controlled cooperative bank looted. ED named CPI(M) itself as 68th accused — first time in Kerala history a party was accused under PMLA. ₹128 cr seized. 8 party accounts frozen. 4 arrested.</td><td><span class="status-proven">Party Accused; ₹128 cr Seized</span></td></tr>
+            <tr><td><strong>Sabarimala Gold Theft (TDB)</strong></td><td>2023</td><td>Gold ornaments stolen from Sabarimala Temple. 13 arrested including 2 former CPI(M) TDB Presidents. HC-monitored SIT. Both HC and SC denied bail — "sufficient evidence."</td><td><span class="status-proven">13 Arrested; Bail Denied by HC &amp; SC</span></td></tr>
+            <tr><td><strong>CAG Fiscal Fraud — ₹3,609 cr</strong></td><td>2024</td><td>CAG documented seizure of ₹3,609 cr from Treasury Savings Bank accounts on March 26, 2024 — 5 days before year-end — to artificially reduce fiscal deficit figures on paper.</td><td><span class="status-proven">CAG Documented in Official Report</span></td></tr>
+            <tr><td><strong>KIIFB Hidden Off-Budget Debt</strong></td><td>2018–24</td><td>Kerala Infrastructure Investment Fund Board used to borrow outside state budget, bypassing FRBM limits. CAG flagged as hidden off-budget liability. Real debt was understated by tens of thousands of crores.</td><td><span class="status-proven">CAG Flagged; Centre withheld borrowing limits</span></td></tr>
+            <tr><td><strong>Cooperative Software Scam ₹700 cr</strong></td><td>2024–25</td><td>₹206 cr TCS contract scrapped. New tender criteria excluded established IT companies. Dinesh Beedi Society (CPI-M linked, no IT experience) positioned for ₹700 cr contract. Opposition moved HC.</td><td><span class="status-alleged">HC petition; Alleged cronyism</span></td></tr>
+            <tr><td><strong>SilverLine (K-Rail) Fund Waste</strong></td><td>2021–22</td><td>₹63,941 cr semi-high-speed rail project pushed without Central approval. Crores spent on surveys, land identification, stone plantings. Project abandoned after public outcry. CM refused to disclose exact amount spent.</td><td><span class="status-proven">Project Abandoned; Funds Wasted</span></td></tr>
+            <tr><td><strong>Building Permit Fee Hike 2000%</strong></td><td>2023</td><td>Fee hiked from ₹525 to ₹7,500–₹25,000 without legally amending the rules. ~4 lakh families overcharged. HC intervened. Illegal collection established.</td><td><span class="status-proven">HC Intervened; Illegal collection</span></td></tr>
+            <tr><td><strong>Swapna Suresh — CM Direct Allegations</strong></td><td>2020–22</td><td>Gold smuggling accused Swapna Suresh alleged CM Pinarayi was directly aware of the diplomatic channel operation. CM denied all. NIA investigated. Statements admitted in court proceedings.</td><td><span class="status-alleged">Alleged; NIA investigation; CM denied</span></td></tr>
+            <tr><td><strong>LDF Functionary Gold Smuggling</strong></td><td>2021–23</td><td>Multiple CPI(M) local leaders arrested for gold smuggling across southern districts. Pattern of using party networks for contraband. No direct CM link proven but widespread at grassroots.</td><td><span class="status-proven">Multiple Arrests</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- MOBILE CARDS -->
+      <div class="corrupt-cards">
+        <div class="cc"><div class="cc-top"><div class="cc-name">Gold Smuggling — Sivasankar / CM's Office</div><div class="cc-year">2020</div></div><div class="cc-facts">30 kg gold via UAE diplomatic baggage. CM's PS Sivasankar linked through WhatsApp chats with accused Swapna Suresh. Suspended after govt inquiry. NIA, ED, Customs &amp; CBI filed separate cases.</div><div class="cc-status"><span class="status-proven">Sivasankar Arrested; 4 agencies active</span></div></div>
+        <div class="cc"><div class="cc-top"><div class="cc-name">LIFE Mission FCRA Scam</div><div class="cc-year">2020</div></div><div class="cc-facts">UAE-funded flood housing project turned into kickback operation. 30% commission allegedly fixed. Sivasankar arrested by ED. 4,000-page chargesheet filed. FCRA violation confirmed.</div><div class="cc-status"><span class="status-proven">Arrested; 4,000-page Chargesheet</span></div></div>
+        <div class="cc"><div class="cc-top"><div class="cc-name">Karuvannur Co-op Bank (₹300 cr)</div><div class="cc-year">2021</div></div><div class="cc-facts">CPI(M)-controlled bank looted. ED named CPI(M) itself as 68th accused — first time a party was accused under PMLA in Kerala. ₹128 cr seized. 8 party accounts frozen.</div><div class="cc-status"><span class="status-proven">Party Accused; ₹128 cr Seized</span></div></div>
+        <div class="cc"><div class="cc-top"><div class="cc-name">Sabarimala Gold Theft (TDB)</div><div class="cc-year">2023</div></div><div class="cc-facts">Gold stolen from Sabarimala Temple. 13 arrested including 2 former CPI(M) TDB Presidents. HC-monitored SIT. Both HC and SC denied bail — "sufficient evidence."</div><div class="cc-status"><span class="status-proven">13 Arrested; HC &amp; SC Denied Bail</span></div></div>
+        <div class="cc"><div class="cc-top"><div class="cc-name">CAG Fiscal Fraud — ₹3,609 cr</div><div class="cc-year">2024</div></div><div class="cc-facts">CAG documented seizure of ₹3,609 cr from TSB accounts on March 26, 2024 — 5 days before year-end — to artificially reduce fiscal deficit on paper.</div><div class="cc-status"><span class="status-proven">CAG Documented in Official Report</span></div></div>
+        <div class="cc"><div class="cc-top"><div class="cc-name">KIIFB Hidden Off-Budget Debt</div><div class="cc-year">2018–24</div></div><div class="cc-facts">KIIFB used to borrow outside state budget, bypassing FRBM limits. CAG flagged as hidden off-budget liability. Real debt understated by tens of thousands of crores.</div><div class="cc-status"><span class="status-proven">CAG Flagged; Centre withheld borrowing limits</span></div></div>
+        <div class="cc"><div class="cc-top"><div class="cc-name">Cooperative Software Scam ₹700 cr</div><div class="cc-year">2024–25</div></div><div class="cc-facts">₹206 cr TCS contract scrapped. New criteria excluded established IT firms. Dinesh Beedi Society (CPI-M linked, no IT experience) positioned for ₹700 cr contract. Opposition moved HC.</div><div class="cc-status"><span class="status-alleged">HC petition; Alleged cronyism</span></div></div>
+        <div class="cc"><div class="cc-top"><div class="cc-name">SilverLine (K-Rail) Fund Waste</div><div class="cc-year">2021–22</div></div><div class="cc-facts">₹63,941 cr rail project abandoned after crores spent on surveys and stone plantings. CM refused to disclose exact amount wasted. No Central approval obtained.</div><div class="cc-status"><span class="status-proven">Project Abandoned; Funds Wasted</span></div></div>
+        <div class="cc"><div class="cc-top"><div class="cc-name">Building Permit Fee Hike 2000%</div><div class="cc-year">2023</div></div><div class="cc-facts">Fee hiked from ₹525 to ₹7,500–₹25,000 without amending rules legally. ~4 lakh families overcharged. HC intervened.</div><div class="cc-status"><span class="status-proven">HC Intervened; Illegal collection</span></div></div>
+        <div class="cc"><div class="cc-top"><div class="cc-name">Swapna Suresh — CM Direct Allegations</div><div class="cc-year">2020–22</div></div><div class="cc-facts">Swapna Suresh alleged CM Pinarayi was directly aware of the diplomatic smuggling channel. CM denied. NIA investigated. Statements admitted in court.</div><div class="cc-status"><span class="status-alleged">Alleged; NIA investigation; CM denied</span></div></div>
+        <div class="cc"><div class="cc-top"><div class="cc-name">LDF Functionary Gold Smuggling</div><div class="cc-year">2021–23</div></div><div class="cc-facts">Multiple CPI(M) local leaders arrested for gold smuggling across southern districts. Pattern of using party networks for contraband.</div><div class="cc-status"><span class="status-proven">Multiple Arrests</span></div></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- PINARAYI FAMILY SECTION -->
-<section id="pinarayi-family" style="background:white;">
+<!-- PINARAYI FAMILY -->
+<section id="pinarayi-family" class="section-white">
   <div class="container">
-    <div class="sec-tag fade-in">The Family Corruption Files</div>
-    <h2 class="sec-title fade-in">Pinarayi Vijayan's<br><span class="l">Family Accused</span></h2>
-    <div class="famous-quote fade-in">
-      <p class="quote-text">When the Chief Minister used <strong>"ഡാഷ് മോനേ രേവന്താ"</strong> against a fellow CM, it wasn't just a "mass" dialogue. To the average voter, it symbolized an administration that had become too arrogant to listen. Instead of answering questions about the state’s economy or jobs, the response was often aggression and insults.</p>
+    <div class="sec-tag fi">The Family Corruption Files</div>
+    <h2 class="sec-title fi">Pinarayi Vijayan's<br><span class="l">Family Accused</span></h2>
+    <div class="famous-quote fi">
+      <p class="qt">Kerala social media coined <strong>"ഡാഷ് മോനേ, വീട്ടിൽ പോയി ചോദിക്ക്"</strong> (Dash Mone — Go home and ask) as a metaphor for Pinarayi-era governance: CM's daughter earns crores for services never rendered; son faces ED summons; son-in-law gets a ministry; CM's PS gets arrested — all while the CM claims ignorance. Four words captured 10 years of nepotism.</p>
     </div>
-    <div class="family-grid fade-in">
-      <div class="family-card">
+    <div class="family-grid fi">
+      <div class="fc">
         <div class="fc-name">Veena Vijayan</div>
         <div class="fc-relation">Daughter of CM Pinarayi Vijayan</div>
         <div class="fc-body">
-          <strong>SFIO (Serious Fraud Investigation Office) Chargesheet — 160 pages:</strong> Veena's firm Exalogic Solutions received ₹1.72–₹2.7 crore from CMRL (Cochin Metro). CMRL's own MD admitted in sworn statement that the services were never actually delivered.<br><br>
-          <strong>Economic Offences Court, Kochi:</strong> SFIO filed prosecution complaint. Karnataka HC dismissed Veena's attempt to halt proceedings (Feb 2026). Ministry of Corporate Affairs approved prosecution.<br><br>
-          <strong>LIFE Mission probe:</strong> ED investigated Veena's possible role in FCRA violations linked to UAE funding channeled through her orbit.
-          <br><br><span class="status-proven">SFIO Chargesheet — EOC Kochi Active</span>
+          <strong>SFIO Chargesheet — 160 pages:</strong> Veena's firm Exalogic Solutions received ₹1.72–₹2.7 crore from CMRL (Cochin Metro). CMRL's own MD admitted in sworn statement that the services were <em>never delivered</em>.<br><br>
+          <strong>Economic Offences Court, Kochi:</strong> SFIO filed prosecution complaint. Karnataka HC dismissed Veena's attempt to halt proceedings (Feb 2026). MCA approved prosecution.<br><br>
+          <strong>LIFE Mission probe:</strong> ED investigated Veena's possible role in FCRA violations linked to UAE funding.<br><br>
+          <span class="status-proven">SFIO Chargesheet — EOC Kochi Active</span>
         </div>
       </div>
-      <div class="family-card">
+      <div class="fc">
         <div class="fc-name">Vivek Vijayan</div>
         <div class="fc-relation">Son of CM Pinarayi Vijayan</div>
         <div class="fc-body">
-          <strong>ED Summons Issued:</strong> Enforcement Directorate issued formal summons to Vivek Vijayan in connection with the LIFE Mission scam investigation.<br><br>
-          <strong>₹4.4 crore kickback allegation:</strong> ED probe examined whether funds from the LIFE Mission UAE-funded housing project were channeled through Vivek's orbit.<br><br>
-          <strong>Investigation:</strong> Vivek appeared before ED for questioning. CM denied any wrongdoing by his son.
-          <br><br><span class="status-alleged">ED Summons; Under Investigation</span>
+          <strong>ED Summons Issued:</strong> Enforcement Directorate issued formal summons in connection with the LIFE Mission scam investigation.<br><br>
+          <strong>₹4.4 crore kickback allegation:</strong> ED probe examined whether LIFE Mission UAE funds were channeled through Vivek's orbit.<br><br>
+          <strong>Investigation:</strong> Vivek appeared before ED for questioning. CM denied any wrongdoing by his son.<br><br>
+          <span class="status-alleged">ED Summons; Under Investigation</span>
         </div>
       </div>
-      <div class="family-card">
+      <div class="fc">
         <div class="fc-name">PA Muhammad Riyas</div>
-        <div class="fc-relation">Son-in-law of CM — served as Minister, Public Works</div>
+        <div class="fc-relation">Son-in-law of CM — PWD Minister</div>
         <div class="fc-body">
           <strong>Conflict of interest:</strong> CM's son-in-law serving as PWD minister under the same CM — one of the most glaring nepotism examples in Kerala's political history.<br><br>
-          <strong>Allegations:</strong> Several complaints regarding PWD project awards and contractor favoritism during his tenure as minister. No formal criminal chargesheet filed against him personally.<br><br>
-          <strong>Public perception:</strong> The "CM's Son-in-Law as Minister" became one of the most-cited corruption symbols in 2026 election campaign.
-          <br><br><span class="status-alleged">Ministerial Nepotism — No Criminal Charge</span>
+          <strong>Allegations:</strong> Multiple complaints regarding PWD project awards and contractor favoritism. No formal criminal chargesheet filed against him personally.<br><br>
+          <strong>Public perception:</strong> The "CM's Son-in-Law as Minister" became a top anti-incumbency symbol in the 2026 campaign.<br><br>
+          <span class="status-alleged">Ministerial Nepotism — No Criminal Charge</span>
         </div>
       </div>
-      <div class="family-card">
+      <div class="fc">
         <div class="fc-name">M. Sivasankar IAS</div>
-        <div class="fc-relation">Principal Secretary to CM — "Extension of CM's Office"</div>
+        <div class="fc-relation">Principal Secretary to CM</div>
         <div class="fc-body">
-          <strong>Gold Smuggling:</strong> WhatsApp chats with Swapna Suresh (gold smuggling accused) proved regular contact. Suspended after govt inquiry found prima facie evidence.<br><br>
+          <strong>Gold Smuggling:</strong> WhatsApp chats with Swapna Suresh proved regular contact. Suspended after govt inquiry found prima facie evidence.<br><br>
           <strong>LIFE Mission FCRA:</strong> Central figure in routing UAE funds through FCRA-violating channels. 4,000-page ED chargesheet names him as prime accused.<br><br>
-          <strong>Arrested by ED:</strong> Taken into custody. Released on bail. Trial ongoing. Made multiple statements implicating political figures.<br><br>
-          <strong>Key question:</strong> How did the CM's Principal Secretary maintain extensive contact with gold smugglers without CM's knowledge?
-          <br><br><span class="status-proven">Arrested by ED; Chargesheet Filed</span>
+          <strong>Arrested by ED:</strong> Released on bail. Trial ongoing. Made multiple statements implicating political figures.<br><br>
+          <span class="status-proven">Arrested by ED; Chargesheet Filed</span>
         </div>
       </div>
     </div>
-    <div class="famous-quote fade-in" style="margin-top:28px;">
-      <p class="quote-text">The phrase <strong>"വീട്ടിൽ പോയി ചോദിക്ക്"</strong> a line critics say sounds dismissive and avoids answering tough questions, adding to concerns about how the Left Democratic Front handles accountability.</p>
+    <div class="famous-quote fi" style="margin-top:22px;">
+      <p class="qt">The phrase <strong>"വീട്ടിൽ പോയി ചോദിക്ക്"</strong> — "Go home and ask (your family)" — trended as shorthand for a government that replaced ideology with dynasty. The voters of Kerala gave their answer: 102 vs 35.</p>
     </div>
   </div>
 </section>
@@ -690,12 +719,12 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
 <!-- DEBT -->
 <section id="debt" style="background:#FFF8F0;">
   <div class="container">
-    <div class="sec-tag fade-in">Fiscal Management Compared</div>
-    <h2 class="sec-title fade-in">The Debt Explosion</h2>
-    <div class="famous-quote fade-in">
-      <p class="quote-text">Kerala's outstanding debt was ₹1,57,370 crore when Chandy left in 2016. By March 2026, it projected to reach ₹4,81,997 crore — a <strong>tripling in 9 years under one CM.</strong> — Kerala State Planning Board + Ministry of Finance (Lok Sabha data)</p>
+    <div class="sec-tag fi">Fiscal Management Compared</div>
+    <h2 class="sec-title fi">The Debt Explosion</h2>
+    <div class="famous-quote fi">
+      <p class="qt">Kerala's outstanding debt was ₹1,57,370 crore when Chandy left in 2016. By March 2026, it reached ₹4,81,997 crore — a <strong>tripling in 9 years under one CM.</strong> — Kerala State Planning Board + Ministry of Finance (Lok Sabha data)</p>
     </div>
-    <div style="max-width:640px;" class="fade-in">
+    <div style="max-width:620px;" class="fi">
       <div class="pbar-row">
         <div class="pbar-label">2015–16 (Chandy leaves)</div>
         <div class="pbar-wrap"><div class="pbar-fill" style="width:33%;background:var(--udf);"></div></div>
@@ -717,7 +746,7 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
         <div class="pbar-val" style="color:#7B1C1C;">₹4.82L cr</div>
       </div>
     </div>
-    <div class="stat-grid" style="margin-top:28px;">
+    <div class="stat-grid fi" style="margin-top:24px;">
       <div class="stat-card l"><div class="sn">₹3.24L Cr</div><div class="sl">New debt added 2016–2026</div></div>
       <div class="stat-card l"><div class="sn">98%</div><div class="sl">New borrowings used to repay old debt</div></div>
       <div class="stat-card l"><div class="sn">37.84%</div><div class="sl">Debt/GSDP ratio (target: 20%)</div></div>
@@ -726,22 +755,22 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
   </div>
 </section>
 
-<!-- LDF DOWNFALL -->
+<!-- DOWNFALL -->
 <section id="downfall" class="section-ldf">
   <div class="container">
-    <div class="sec-tag fade-in">Why Kerala Rejected LDF 2026</div>
-    <h2 class="sec-title fade-in">The <span class="l">Downfall</span> of the Left</h2>
-    <p style="color:var(--gray);margin-bottom:32px;font-size:13px;line-height:1.7;" class="fade-in">99 seats (2021) → 35 seats (2026). A collapse of 64 seats. 13 sitting ministers personally defeated at their own constituencies.</p>
-    <div class="reason-grid fade-in">
+    <div class="sec-tag fi">Why Kerala Rejected LDF 2026</div>
+    <h2 class="sec-title fi">The <span class="l">Downfall</span> of the Left</h2>
+    <p style="color:var(--gray);margin-bottom:28px;font-size:13px;line-height:1.7;" class="fi">99 seats (2021) → 35 seats (2026). A collapse of 64 seats. 13 sitting ministers personally defeated at their own constituencies.</p>
+    <div class="reason-grid fi">
       <div class="reason-card"><div class="reason-num">01</div><h3>Family Rule &amp; Nepotism</h3><p>CM's daughter (SFIO chargesheet), son (ED summons), son-in-law (minister), Principal Secretary (arrested) — all under probe. Destroyed the Left's "ideological purity" image permanently.</p></div>
       <div class="reason-card"><div class="reason-num">02</div><h3>Party Itself Became Accused</h3><p>First time in Kerala history — CPI(M) as an organization named 68th accused in Karuvannur PMLA case. Party bank accounts seized. Unprecedented institutional corruption.</p></div>
       <div class="reason-card"><div class="reason-num">03</div><h3>₹3.24 Lakh Crore New Debt</h3><p>Debt tripled in 9 years. 98% of new borrowing went to servicing old debt. CAG flagged hidden KIIFB borrowings. Future generations burdened.</p></div>
       <div class="reason-card"><div class="reason-num">04</div><h3>Youth Exodus — 2.5L Leave Annually</h3><p>30% youth unemployment. Foxconn chose Tamil Nadu. No major new industry. Kerala has India's highest literacy — but no jobs for its own graduates.</p></div>
-      <div class="reason-card"><div class="reason-num">05</div><h3>Sabarimala Temple Gold Stolen</h3><p>Two former CPI(M) TDB Presidents arrested for Sabarimala gold theft. HC and SC denied bail. Destroyed Left's secular moral authority across all religious communities.</p></div>
-      <div class="reason-card"><div class="reason-num">06</div><h3>CM Stopped All Press Conferences</h3><p>Pinarayi held no press conferences after February 2026. Decision-making became completely centralized. Democratic accountability collapsed in the party's own government.</p></div>
-      <div class="reason-card"><div class="reason-num">07</div><h3>Arrogance Despite Repeated Warnings</h3><p>Lost local body elections 2025. Won only 1 of 20 Lok Sabha seats 2024. Lost multiple by-elections. Every democratic signal ignored. Campaign ran on "97% delivery" claim as voters walked away.</p></div>
+      <div class="reason-card"><div class="reason-num">05</div><h3>Sabarimala Temple Gold Stolen</h3><p>Two former CPI(M) TDB Presidents arrested for Sabarimala gold theft. HC and SC denied bail. Destroyed Left's secular moral authority across all communities.</p></div>
+      <div class="reason-card"><div class="reason-num">06</div><h3>CM Stopped All Press Conferences</h3><p>Pinarayi held no press conferences after February 2026. Decision-making completely centralized. Democratic accountability collapsed in the party's own government.</p></div>
+      <div class="reason-card"><div class="reason-num">07</div><h3>Arrogance Despite Repeated Warnings</h3><p>Lost local body elections 2025. Won only 1 of 20 Lok Sabha seats 2024. Lost multiple by-elections. Campaign ran on "97% delivery" claim as voters walked away.</p></div>
       <div class="reason-card"><div class="reason-num">08</div><h3>Kerala's Inflation Highest in India</h3><p>Kerala's inflation 8.6% in 2025 — highest of any Indian state while national rate was below 1%. Ordinary families paid for elite corruption in their daily grocery bills.</p></div>
-      <div class="reason-card"><div class="reason-num">09</div><h3>Building Permit Fee — 2000%+ Illegal Hike</h3><p>Fee hiked from ₹525 to ₹7,500–₹25,000 without legally amending rules. 4 lakh families overcharged. HC intervened. The "party of the working class" taxed ordinary homebuilders ruthlessly.</p></div>
+      <div class="reason-card"><div class="reason-num">09</div><h3>Building Permit Fee — 2000%+ Illegal Hike</h3><p>Fee hiked from ₹525 to ₹7,500–₹25,000 without legally amending rules. 4 lakh families overcharged. HC intervened. "Party of the working class" taxed ordinary homebuilders ruthlessly.</p></div>
     </div>
   </div>
 </section>
@@ -749,13 +778,12 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
 <!-- VERDICT -->
 <section id="verdict" class="section-white">
   <div class="container">
-    <div class="sec-tag fade-in">Balanced Historical Assessment</div>
-    <h2 class="sec-title fade-in">The Honest Verdict</h2>
-    <div class="famous-quote fade-in">
-      <p class="quote-text">"Neither party is spotlessly clean. But the scale, institutional depth, and familial reach of corruption under Pinarayi Vijayan's LDF (2016–2026) is historically unprecedented in Kerala — and the voters responded accordingly."</p>
+    <div class="sec-tag fi">Balanced Historical Assessment</div>
+    <h2 class="sec-title fi">The Honest Verdict</h2>
+    <div class="famous-quote fi">
+      <p class="qt">"Neither party is spotlessly clean. But the scale, institutional depth, and familial reach of corruption under Pinarayi Vijayan's LDF (2016–2026) is historically unprecedented in Kerala — and the voters responded accordingly."</p>
     </div>
-
-    <div class="verdict-grid fade-in">
+    <div class="verdict-grid fi">
       <div class="verdict-box u">
         <h3>🔵 What UDF Did Right</h3>
         <p>• Implemented Land Reform (building on EMS's legislation)<br>• Built Kochi Metro, Vizhinjam Port, Kannur Airport — all delivered<br>• Created India's first IT Park — Technopark<br>• 1,67,096 govt jobs filled — record in state history<br>• Welfare pension: 12.9L → 34.43L beneficiaries (167% rise)<br>• UN Public Service Award (Chandy — only Kerala CM)<br>• 227 road bridges — highest ever in state history<br>• Pluralist governance, respected all communities<br>• Most UDF corruption allegations cleared by courts</p>
@@ -765,44 +793,30 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
         <p>• EMS Land Reform (1957, 1967) — greatest social achievement in Kerala<br>• Total Literacy Campaign (1989) — globally recognized<br>• Kudumbashree (1998) — national model for women's empowerment<br>• People's Plan Campaign — decentralized democracy<br>• COVID-19 response (2020) — praised nationally<br>• People's Science Movement (KSSP)<br>• Rural health infrastructure (1957–70 era)<br>• Agricultural workers' rights &amp; minimum wages<br>• IT@School — computers in government schools</p>
       </div>
     </div>
-
-    <!-- Fair Comparison Table -->
-    <div class="info-box fade-in" style="margin-top:28px;">
-      <h4 style="margin-bottom:16px;">⚖️ The Fair Side-by-Side</h4>
+    <div class="info-box fi" style="margin-top:24px;">
+      <h4 style="margin-bottom:14px;">⚖️ The Fair Side-by-Side</h4>
       <div class="table-wrap">
-        <table class="compare-tbl">
-          <thead><tr>
-            <th style="min-width:190px;">Criteria</th>
-            <th style="text-align:center;min-width:160px;color:#64B5F6;">UDF</th>
-            <th style="text-align:center;min-width:160px;color:#EF9A9A;">LDF</th>
-          </tr></thead>
+        <table class="compare-tbl" style="min-width:500px;">
+          <thead><tr><th style="min-width:180px;">Criteria</th><th style="text-align:center;min-width:140px;">UDF</th><th style="text-align:center;min-width:140px;">LDF</th></tr></thead>
           <tbody>
             <tr><td>Individual ministers corruption</td><td style="text-align:center;"><span class="badge badge-amber">Yes — mostly cleared</span></td><td style="text-align:center;"><span class="badge badge-red">Yes — major proven cases</span></td></tr>
             <tr><td>CM's direct family charged</td><td style="text-align:center;"><span class="badge badge-green">No</span></td><td style="text-align:center;"><span class="badge badge-red">Yes — daughter + son + son-in-law</span></td></tr>
             <tr><td>Party organization as accused</td><td style="text-align:center;"><span class="badge badge-green">No</span></td><td style="text-align:center;"><span class="badge badge-red">Yes — 68th accused (PMLA)</span></td></tr>
             <tr><td>Religious institution desecrated</td><td style="text-align:center;"><span class="badge badge-green">No</span></td><td style="text-align:center;"><span class="badge badge-red">Yes — Sabarimala gold theft</span></td></tr>
-            <tr><td>Infrastructure legacy</td><td style="text-align:center;"><span class="badge badge-blue">★ Strong — Metro, Port, Airport started</span></td><td style="text-align:center;"><span class="badge badge-amber">Completed UDF projects + KIIFB</span></td></tr>
+            <tr><td>Infrastructure legacy</td><td style="text-align:center;"><span class="badge badge-blue">★ Strong — Metro, Port, Airport</span></td><td style="text-align:center;"><span class="badge badge-amber">Completed UDF projects + KIIFB</span></td></tr>
             <tr><td>Debt management</td><td style="text-align:center;"><span class="badge badge-green">Moderate / Within norms</span></td><td style="text-align:center;"><span class="badge badge-red">Critical failure — tripled</span></td></tr>
-            <tr><td>Welfare expansion</td><td style="text-align:center;"><span class="badge badge-blue">★ Strong — 167% beneficiary rise</span></td><td style="text-align:center;"><span class="badge badge-blue">Strong — continued and expanded</span></td></tr>
+            <tr><td>Welfare expansion</td><td style="text-align:center;"><span class="badge badge-blue">★ Strong — 167% beneficiary rise</span></td><td style="text-align:center;"><span class="badge badge-blue">Strong — continued</span></td></tr>
             <tr><td>Historical social achievement</td><td style="text-align:center;"><span class="badge badge-blue">Implemented Land Reform</span></td><td style="text-align:center;"><span class="badge badge-green">★ Authored Land Reform + Literacy</span></td></tr>
-            <tr><td>CAG audit objections</td><td style="text-align:center;"><span class="badge badge-green">Normal level</span></td><td style="text-align:center;"><span class="badge badge-red">KIIFB hidden debt flagged repeatedly</span></td></tr>
+            <tr><td>CAG audit objections</td><td style="text-align:center;"><span class="badge badge-green">Normal level</span></td><td style="text-align:center;"><span class="badge badge-red">KIIFB hidden debt flagged</span></td></tr>
           </tbody>
         </table>
       </div>
     </div>
-
-    <!-- Election History -->
-    <div style="margin-top:40px;" class="fade-in">
-      <h3 style="font-size:19px;margin-bottom:18px;font-weight:700;">📊 Kerala Election Results 1957–2026</h3>
+    <div style="margin-top:36px;" class="fi">
+      <h3 style="font-size:18px;margin-bottom:16px;font-weight:700;">📊 Kerala Election Results 1957–2026</h3>
       <div class="table-wrap">
-        <table class="election-tbl">
-          <thead><tr>
-            <th style="min-width:50px;">Year</th>
-            <th style="min-width:80px;">Winner</th>
-            <th style="min-width:90px;">UDF Seats</th>
-            <th style="min-width:90px;">LDF Seats</th>
-            <th>Chief Minister</th>
-          </tr></thead>
+        <table class="election-tbl" style="min-width:480px;">
+          <thead><tr><th style="min-width:48px;">Year</th><th style="min-width:80px;">Winner</th><th>UDF</th><th>LDF</th><th>Chief Minister</th></tr></thead>
           <tbody>
             <tr><td>1957</td><td><span class="pill pill-ldf">Left</span></td><td>43</td><td>65</td><td>E.M.S. Namboodiripad</td></tr>
             <tr><td>1960</td><td><span class="pill pill-udf">Congress</span></td><td>94</td><td>29</td><td>P.T. Chacko</td></tr>
@@ -819,8 +833,8 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
             <tr><td>2006</td><td><span class="pill pill-ldf">LDF</span></td><td>42</td><td>98</td><td>V.S. Achuthanandan</td></tr>
             <tr><td>2011</td><td><span class="pill pill-udf">UDF</span></td><td>72</td><td>68</td><td>Oommen Chandy</td></tr>
             <tr><td>2016</td><td><span class="pill pill-ldf">LDF</span></td><td>47</td><td>91</td><td>Pinarayi Vijayan</td></tr>
-            <tr><td>2021</td><td><span class="pill pill-ldf">LDF ★ Historic</span></td><td>41</td><td>99</td><td>Pinarayi Vijayan (historic re-election)</td></tr>
-            <tr><td><strong>2026</strong></td><td><span class="pill pill-udf">UDF ★</span></td><td style="color:var(--udf);font-weight:700;font-size:15px;">102</td><td style="color:var(--ldf);font-weight:700;font-size:15px;">35</td><td>UDF-led formation</td></tr>
+            <tr><td>2021</td><td><span class="pill pill-ldf">LDF ★</span></td><td>41</td><td>99</td><td>Pinarayi Vijayan (historic re-election)</td></tr>
+            <tr><td><strong>2026</strong></td><td><span class="pill pill-udf">UDF ★</span></td><td style="color:var(--udf);font-weight:700;font-size:14px;">102</td><td style="color:var(--ldf);font-weight:700;font-size:14px;">35</td><td>UDF-led formation</td></tr>
           </tbody>
         </table>
       </div>
@@ -829,13 +843,13 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
 </section>
 
 <!-- CLOSING -->
-<section style="background:var(--dark);padding:64px 0;text-align:center;">
-  <div class="container fade-in">
-    <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(14px,2.2vw,20px);color:rgba(255,255,255,0.9);max-width:760px;margin:0 auto 24px;line-height:1.8;">
+<section style="background:var(--dark);padding:60px 0;text-align:center;">
+  <div class="container fi">
+    <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(13px,2vw,19px);color:rgba(255,255,255,0.9);max-width:740px;margin:0 auto 22px;line-height:1.8;">
       "The LDF's greatest era — EMS, Total Literacy, Land Reform, Kudumbashree — belongs to different leaders with genuine principles. Pinarayi's decade belongs to a different chapter: one of families, gold, debt, and silence. Kerala did not reject the Left's history. It rejected what the Left had become."
     </div>
     <div style="color:rgba(255,255,255,0.4);font-size:11px;letter-spacing:2px;text-transform:uppercase;">— The People of Kerala · 102 vs 35 · May 2026</div>
-    <div class="hero-scoreboard" style="margin-top:36px;">
+    <div class="hero-scoreboard" style="margin-top:32px;justify-content:center;">
       <div class="hero-stat u"><div class="n">102</div><div class="label">UDF 2026</div></div>
       <div class="hero-stat"><div class="n gold">69</div><div class="label">Years Since Statehood</div></div>
       <div class="hero-stat l"><div class="n">35</div><div class="label">LDF 2026</div></div>
@@ -844,26 +858,26 @@ footer span{color:rgba(255,255,255,0.4);font-size:11px;}
 </section>
 
 <footer>
-  <strong>DATA SOURCES</strong><br>
+  <strong>Data Sources</strong><br>
   Kerala State Planning Board Economic Review · CAG State Finances Audit Reports 2022–24 · Ministry of Finance Lok Sabha data<br>
   NITI Aayog Kerala Fiscal Report · SFIO Prosecution Complaint · ED Chargesheets · Kerala HC Orders · Supreme Court Orders<br>
   Wikipedia — Kerala Model, EMS Namboodiripad, Second Chandy Ministry, Karuvannur scam<br>
-  Onmanorama · The News Minute · Deccan Chronicle · The South First · The Federal — verified reports<br><br>
-  <span>Allegations clearly marked. Proven cases refer to legally actioned events with agency action or court findings. Both parties' achievements and failures are documented honestly. This is an informational reference, not campaign material.</span>
+  Onmanorama · The News Minute · Deccan Chronicle · The South First · The Federal — verified reports<br>
+  <span>Allegations are clearly marked. Proven cases refer to legally actioned events with agency action or court findings. Both parties' achievements and failures are documented honestly. This is an informational reference, not campaign material.</span>
 </footer>
 
 <script>
 const obs = new IntersectionObserver(entries => {
-  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('vis'); });
 }, { threshold: 0.06 });
-document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+document.querySelectorAll('.fi').forEach(el => obs.observe(el));
 
 const pbObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
-    if(e.isIntersecting) {
+    if(e.isIntersecting){
       e.target.querySelectorAll('.pbar-fill').forEach(b => {
         const w = b.style.width; b.style.width='0';
-        setTimeout(() => b.style.width=w, 100);
+        setTimeout(() => b.style.width=w, 80);
       });
     }
   });
